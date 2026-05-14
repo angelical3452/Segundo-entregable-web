@@ -1,0 +1,83 @@
+.PaginaError {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #020617);
+  padding: 20px;
+}
+
+.ContainerError {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.CodigoError {
+  font-size: 7rem;
+  color: #00e5ff;
+  margin-bottom: 10px;
+}
+
+.TituloError {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.TextoError {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.BotonError {
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  background-color: #00e5ff;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.BotonError:hover {
+  transform: scale(1.05);
+  background-color: #67e8f9;
+  border-radius: 20px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.ErrorButton {
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  background-color: #00e5ff;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ErrorButton:hover {
+  transform: scale(1.05);
+  background-color: #67e8f9;
+}
+
+.ErrorImage {
+  width: 220px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}

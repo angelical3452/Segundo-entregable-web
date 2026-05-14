@@ -1,0 +1,135 @@
+.Card {
+  width: 300px;
+  min-height: 420px;
+  color: #00e5ff !important;
+  background-color: #0f172a !important;
+  border: 1px solid #1e293b;
+  border-radius: 24px !important;
+  overflow: hidden;
+  box-shadow:
+    0px 0px 0px 1px rgba(255, 255, 255, 0.05),
+    0px 8px 25px rgba(0, 0, 0, 0.35),
+    0px 0px 18px rgba(255, 255, 255, 0.08);
+}
+.Cardarea {
+  height: 100%;
+  background-color: #0f172a !important;
+}
+.contenido {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  padding: 20px;
+  height: 120px;
+}
+
+.contenido h5 {
+  font-size: 1.2rem;
+  color: #00e5ff;
+  font-weight: bold;
+}
+
+.img {
+  object-fit: contain;
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #0f172a;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #1e293b;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+.modal-Imagen img {
+  width: 280px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.modal-Text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.26rem !important;
+}
+
+.modal-Text h2 {
+  font-size: 1.35rem;
+  font-weight: bold;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.info span {
+  padding: 10px 16px;
+  border-radius: 999px;
+  background-color: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.9rem;
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.status-alive {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.status-dead {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.status-unknown {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .modal {
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px;
+    min-width: 600px;
+    gap: 80px;
+  }
+
+  .modal-Imagen img {
+    width: 220px;
+  }
+
+  .info span {
+    font-size: 1.22rem;
+    padding: 7px 13px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .modal {
+    min-width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .info span {
+    font-size: 1.22rem;
+    padding: 7px 13px;
+  }
+}

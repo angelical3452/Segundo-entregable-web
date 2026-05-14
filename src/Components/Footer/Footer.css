@@ -1,0 +1,13 @@
+.Footer {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  color: #cbd5e1;
+  padding: 30px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin-top: 50px;
+  h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}

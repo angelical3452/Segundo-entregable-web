@@ -1,0 +1,104 @@
+.Ordenar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-height: 100vh;
+  overflow-anchor: none;
+}
+
+.Warning {
+  width: 90%;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.35);
+  min-height: 160px;
+}
+
+.MuiPagination-root {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.MuiPagination-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+}
+
+.MuiPaginationItem-root {
+  min-width: 45px !important;
+  height: 45px !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: white !important;
+  backdrop-filter: blur(8px);
+  border-radius: 12px !important;
+  transition: 0.3s !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.MuiPaginationItem-root:hover {
+  background: #00e5ff !important;
+  color: black !important;
+  transform: translateY(-3px);
+}
+
+.Mui-selected {
+  background: #00e5ff !important;
+  color: black !important;
+  font-weight: bold !important;
+  box-shadow: 0px 4px 15px rgba(0, 229, 255, 0.5);
+}
+
+.MuiPaginationItem-previousNext {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .MuiPagination-root {
+    margin-top: 35px;
+  }
+
+  .MuiPagination-ul {
+    gap: 8px;
+  }
+
+  .MuiPaginationItem-root {
+    min-width: 40px !important;
+    height: 40px !important;
+    font-size: 0.9rem !important;
+    border-radius: 12px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .MuiPagination-root {
+    margin-top: 40px;
+  }
+
+  .MuiPagination-ul {
+    gap: 12px;
+  }
+
+  .MuiPaginationItem-root {
+    min-width: 45px !important;
+    height: 45px !important;
+    font-size: 1rem !important;
+  }
+}

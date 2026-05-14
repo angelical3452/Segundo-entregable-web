@@ -1,0 +1,126 @@
+.InputComplete {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 16px;
+}
+.MuiAutocomplete-root {
+  width: 250px !important;
+}
+
+.MuiOutlinedInput-root {
+  min-height: 72px;
+  background-color: #0f172a !important;
+  color: white !important;
+  border-radius: 22px !important;
+  transition: 0.3s ease !important;
+  box-shadow:
+    0px 0px 0px 1px rgba(255, 255, 255, 0.05),
+    0px 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #00e5ff !important;
+}
+
+.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #00e5ff !important;
+
+  box-shadow: 0px 0px 18px rgba(0, 229, 255, 0.25);
+}
+
+.MuiInputBase-input {
+  color: #ffffff !important;
+  font-size: 1.05rem !important;
+  padding: 18px 18px !important;
+}
+
+.MuiInputLabel-root {
+  color: #cbd5e1 !important;
+  font-size: 1rem !important;
+}
+
+.Mui-focused .MuiInputLabel-root {
+  color: #00e5ff !important;
+}
+
+.MuiSvgIcon-root {
+  color: #cbd5e1 !important;
+
+  font-size: 1.7rem !important;
+}
+
+.MuiAutocomplete-paper {
+  background-color: #0f172a !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px !important;
+  margin-top: 10px;
+  overflow: hidden;
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+.MuiAutocomplete-option {
+  min-height: 56px;
+  font-size: 1rem;
+  padding: 14px 18px;
+  transition: 0.2s ease;
+  color: white !important;
+}
+
+.MuiAutocomplete-option:hover {
+  background-color: rgba(0, 229, 255, 0.15) !important;
+  color: #00e5ff !important;
+}
+
+.MuiAutocomplete-option[aria-selected="true"] {
+  background-color: rgba(0, 229, 255, 0.22) !important;
+  color: #00e5ff !important;
+}
+
+.MuiAutocomplete-noOptions {
+  color: white !important;
+  font-size: 1rem;
+  padding: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .MuiAutocomplete-root {
+    min-width: 70vw !important;
+  }
+  .MuiAutocomplete-root {
+    max-width: 380px;
+  }
+
+  .MuiOutlinedInput-root {
+    min-height: 62px;
+
+    border-radius: 18px !important;
+  }
+
+  .MuiInputBase-input {
+    font-size: 1rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .MuiAutocomplete-root {
+    min-width: 430px;
+  }
+
+  .MuiOutlinedInput-root {
+    min-height: 58px;
+  }
+
+  .MuiInputBase-input {
+    font-size: 0.98rem !important;
+  }
+
+  .MuiAutocomplete-option {
+    font-size: 0.95rem;
+  }
+}

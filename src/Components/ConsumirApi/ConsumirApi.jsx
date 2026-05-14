@@ -20,7 +20,7 @@ const ConsumirApi = ({ search }) => {
     setPage(value);
   };
   const cache = useRef({});
-  
+
   useEffect(() => {
     setPage(1);
   }, [search]);
@@ -64,7 +64,7 @@ const ConsumirApi = ({ search }) => {
           setTotalPages(1);
           setLoading(false);
         });
-    }, 400);
+    }, 600);
 
     return () => {
       clearTimeout(timer);

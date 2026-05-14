@@ -23,7 +23,7 @@ const ConsumirApi = ({ search }) => {
   useEffect(() => {
     setPage(1);
   }, [search]);
-  const cache = useRef({});
+  const cache = useRef({}); 
 
   useEffect(() => {
     const controller = new AbortController();
@@ -50,22 +50,12 @@ const ConsumirApi = ({ search }) => {
           return res.json();
         })
         .then((data) => {
-          const exactResults =
-            search !== ""
-              ? data.results.filter(
-                  (character) =>
-                    character.species.toLowerCase() === search.toLowerCase(),
-                )
-              : data.results;
-
           cache.current[cacheKey] = {
-            results: exactResults,
+            results: data.results,
             totalPages: data.info.pages,
           };
-
-          setCharacters(exactResults);
+          setCharacters(data.results);
           setTotalPages(data.info.pages);
-
           setLoading(false);
         })
         .catch((error) => {

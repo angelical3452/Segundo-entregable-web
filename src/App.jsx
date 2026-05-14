@@ -4,7 +4,7 @@ import Header from "./Components/Header/Header";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 // paginas
-import { HashRouter  as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Filter from "./Pages/Filter/Filter";
 import Error from "./Pages/Error/Error";

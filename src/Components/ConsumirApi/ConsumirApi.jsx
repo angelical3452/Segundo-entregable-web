@@ -19,11 +19,11 @@ const ConsumirApi = ({ search }) => {
   const handlePageChange = (event, value) => {
     setPage(value);
   };
-
+  const cache = useRef({});
+  
   useEffect(() => {
     setPage(1);
   }, [search]);
-  const cache = useRef({}); 
 
   useEffect(() => {
     const controller = new AbortController();

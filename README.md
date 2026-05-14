@@ -1,20 +1,4 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# Segundo-entregable-web" 
-"# Segundo-entregable-web" 
-"# Segundo-entregable-web" 
-"# Segundo-entregable-web" 
+Para ejecutar este archivo tendra que ubicarse en la carpeta y hacer el comando de npm i para posteriormente hacer npm run dev, en la pagina encontrara un encabezado que dice Rick and Morty Api
+, luego un navegador que le permite pasar del home al filtro de los personajes, en el home encontrara los personajes y en el filtrar por especie le aparecera los personajes pero con la diferencia de que tendra un input para hacer la busqueda de cierta especie, si no la encuentra dira que no encontro esa especie, luego una paginacion para pasar las paginas para ir viendo cada uno de los personajes, tambien de que a la hora de dar click a las tarjetas saldra de forma más detallada la informacion de ese personaje, además de contar con error page para cuando el usuario quiera ir a una pagina que no exista y ya por ultimo un footer con Ingeniería de Sistemas de la Universidad de la Amazonia
+Hecho por Miguel Angel Ortiz
+© 2026 todos los derechos reservados.
